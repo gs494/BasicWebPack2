@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 const open = require("open");
-var cors = require('cors')
-app.use(cors())
+var cors = require('cors');
+app.use(cors());
 app.use(express.static('docs'));
 
 app.get('/api/v1/cities', function(req, res) {
